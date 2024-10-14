@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridEx2</title>
+    <style>
+      .container{
+        width: 80vw;
+        height: 50vh;
+        border: 6px solid #000;
+        margin: 50px auto;
+        display: grid;
+        
+        grid-template-rows: 200px 1fr 100px;
+      }
+     
+      .container .item1{
+        background-color: aqua;
+      }
+      .container .item2{
+        background-color: cadetblue;
+      }
+      .container .item3{
+        background-color: #d6114c;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <header class="item item1">header-고정</header>
+    <div class="contents item item2">contents-가변(컨텐츠의 크기에 따라 높이값 변경)</div>
+    <footer class="item item3">footer-고정</footer>
+  </div>
+</body>
+</html>

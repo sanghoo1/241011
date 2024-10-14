@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>girdEx5</title>
+    <style>
+        body {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .container {
+      width: 90vw;
+      height: 30vh;
+      margin: 50px auto;
+      border: 6px solid #000;
+      display: grid;
+     
+    }
+    .container .item:nth-child(even){
+      background-color: blue;
+    }
+    .container .item:nth-child(odd){
+      background-color: blueviolet;
+    }
+    .box1{
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    .box2{
+      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    }
+    </style>
+</head>
+<body>
+  <div class="container box1">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+  <div class=" container box2">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+</body>
+</html>
